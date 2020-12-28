@@ -22,20 +22,20 @@ class Home extends React.Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <section className="container">
+      <section className="container movies">
         {isLoading
           ? <div className="loader">
-              <span className="loader_text">Loading...</span>
+              <h1 className="loader_text">Loading...</h1>
             </div>
           : movies.map(movie => {
             return (
-              <div className="movies">
+              <div className="one-movie">
                 <Movie
                   key={movie.id}
                   id={movie.id}
-                  year={movie.id}
+                  year={movie.year}
                   title={movie.title}
-                  summary={movie.summary}
+                  summary={movie.description_full}
                   poster={movie.medium_cover_image}
                   genres={movie.genres}
                 />

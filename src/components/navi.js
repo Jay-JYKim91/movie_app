@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'; //link has to be inside of the router n
 
 function Navi() {
   return (
-    <div>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+    <div className="banner">
+      <Link to="/">MOVIE</Link>
     </div>
   )
 }

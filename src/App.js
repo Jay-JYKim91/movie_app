@@ -9,7 +9,6 @@ function App() {
   return <HashRouter>
     <Navi />
     <Route path="/" exact={true} component={ Home } />
-    <Route path="/about" component={ About } />
     <Route path="/movie/:id" component={ Details } />
   </HashRouter>
 
